@@ -22,7 +22,7 @@
   <project path="android/external/stlport" name="platform/external/stlport" />
   <project path="android/external/llvm" name="platform/external/llvm" />
   <project path="android/external/clang" name="platform/external/clang" />
-  <project path="android/external/compiler-rt" name="platform/external/compiler-rt" revision="android-4.2.2_r1" />
-  <project path="android/external/safe-iop" name="platform/external/safe-iop" revision="android-4.2.2_r1" />
+  <project path="android/external/compiler-rt" name="platform/external/compiler-rt" revision="refs/tags/android-4.2.2_r1" />
+  <project path="android/external/safe-iop" name="platform/external/safe-iop" revision="refs/tags/android-4.2.2_r1" />
 
 </manifest>
