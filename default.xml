@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="linaro"
-           fetch="git://git.linaro.org/android/" />
+           fetch="git://android.git.linaro.org/" />
   <default revision="refs/heads/linaro_android_4.2.2"
 	   remote="linaro" />
   <remote  name="github"
