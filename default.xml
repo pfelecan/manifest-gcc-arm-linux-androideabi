@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="linaro"
+           fetch="git://git.linaro.org/android/" />
+  <default revision="refs/heads/linaro_android_4.2.2"
+	   remote="linaro" />
+  <remote  name="github"
+	   fetch="git://github.com/" />
+
+  <project path="debian" name="xnox/gcc-arm-linux-androideabi" remote="github"/>
+
+  <project path="android/bionic" name="platform/bionic" />
+  <project path="android/build" name="platform/build" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="android/device/linaro/common" name="device/linaro/common" revision="linaro-ics" />
+  <project path="android/device/linaro/pandaboard" name="device/linaro/pandaboard" revision="linaro-jb" />
+
+  <project path="android/frameworks/native" name="platform/frameworks/native" />
+  <project path="android/hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" />
+  <project path="android/system/core" name="platform/system/core" />
+  <project path="android/external/stlport" name="platform/external/stlport" />
+  <project path="android/external/llvm" name="platform/external/llvm" />
+  <project path="android/external/clang" name="platform/external/clang" />
+  <project path="android/external/compiler-rt" name="platform/external/compiler-rt" revision="android-4.2.2_r1" />
+  <project path="android/external/safe-iop" name="platform/external/safe-iop" revision="android-4.2.2_r1" />
+
+</manifest>
