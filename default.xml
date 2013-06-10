@@ -7,7 +7,7 @@
   <remote  name="github"
 	   fetch="git://github.com/" />
 
-  <project path="debian" name="xnox/gcc-arm-linux-androideabi" remote="github"/>
+  <project path="debian" name="xnox/gcc-arm-linux-androideabi" remote="github" revision="master"/>
 
   <project path="android/bionic" name="platform/bionic" />
   <project path="android/build" name="platform/build" >
