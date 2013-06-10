@@ -11,7 +11,7 @@
 
   <project path="android/bionic" name="platform/bionic" />
   <project path="android/build" name="platform/build" >
-    <copyfile src="core/root.mk" dest="Makefile" />
+    <copyfile src="core/root.mk" dest="android/Makefile" />
   </project>
   <project path="android/device/linaro/common" name="device/linaro/common" revision="linaro-ics" />
   <project path="android/device/linaro/pandaboard" name="device/linaro/pandaboard" revision="linaro-jb" />
