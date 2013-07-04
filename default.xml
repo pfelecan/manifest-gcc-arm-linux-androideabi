@@ -23,7 +23,5 @@
   <project name="platform/frameworks/native" path="android/frameworks/native" revision="eec5004d55d310a6960f86997c1cbf790e80b6ac" upstream="linaro_android_4.1.2"/>
   <project name="platform/hardware/ti/omap4xxx" path="android/hardware/ti/omap4xxx" revision="7cc40a376a149e24fe4907db31b7d0f0b5e73645" upstream="linaro_android_4.1.2"/>
   <project name="platform/system/core" path="android/system/core" revision="dd28bb9220fc39f6bf793dcf2d5938e928338497" upstream="linaro_android_4.1.2"/>
-  <project name="toolchain/binutils-current" path="binutils/binutils-current" revision="a894b8ee163afc824a6522511f8f9e329f8497cc" upstream="linaro-2.23.52.0.2"/>
   <project path="debian" name="xnox/gcc-arm-linux-androideabi" remote="github" revision="master"/>
-  <project name="xnox/linaro-gcc-4.7-src" path="gcc/gcc-current" remote="github" revision="master"/>
 </manifest>
