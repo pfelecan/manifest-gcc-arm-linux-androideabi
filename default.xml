@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="github"
-	      fetch="git://github.com/" />
+  <remote  name="github" fetch="git://github.com/" />
 
   <remote fetch="git://android.git.linaro.org/" name="korg" review="review.android.git.linaro.org"/>
   <remote fetch="http://android.git.linaro.org/git-ro/" name="linaro-android" review="review.android.git.linaro.org"/>
   <remote fetch="git://git.linaro.org/" name="linaro-other"/>
-  
   <default remote="linaro-android" revision="linaro-master"/>
-  
-  <project name="device/common" path="android/device/common" revision="f5e5e76065d9dbc6f2334e4bee4af233aaebc14a" upstream="master"/>
-  <project name="device/linaro/common" path="android/device/linaro/common" revision="e418495a09618f967ccd677bc57a1e47f5b3f6c3" upstream="linaro-ics"/>
-  <project name="device/linaro/pandaboard" path="android/device/linaro/pandaboard" revision="45fa7e4b9fc3231ee831b41c0ec21b74c44d0c16" upstream="linaro-jb"/>
+
+  <project path="debian" name="xnox/gcc-arm-linux-androideabi" remote="github" revision="master"/>
   <project name="platform/bionic" path="android/bionic" revision="b51524f0d75e3c1427a9a58bf86a47f95e073181" upstream="linaro_android_4.1.2"/>
   <project name="platform/build" path="android/build" revision="d840ac027d108f9b04bf6b0a6336e0e37dc959ad" upstream="linaro_android_4.1.2">
     <copyfile dest="android/Makefile" src="core/root.mk"/>
   </project>
-  <project name="platform/external/elfutils" path="android/external/elfutils" revision="1d641eedf594a59724c8bf9300f79bf6e0596119" upstream="linaro_android_4.1.2"/>
-  <project name="platform/external/svox" path="android/external/svox" revision="358de7f221657b7ebd2619f887007f1669c20f7f" upstream="refs/tags/android-4.1.2_r1"/>
-  <project name="platform/frameworks/base" path="android/frameworks/base" revision="2402d58e15d51869c5e7e58439170918506a52c7" upstream="linaro_android_4.1.2"/>
+  <project name="device/linaro/common" path="android/device/linaro/common" revision="e418495a09618f967ccd677bc57a1e47f5b3f6c3" upstream="linaro-ics"/>
+  <project name="device/linaro/pandaboard" path="android/device/linaro/pandaboard" revision="45fa7e4b9fc3231ee831b41c0ec21b74c44d0c16" upstream="linaro-jb"/>
   <project name="platform/frameworks/native" path="android/frameworks/native" revision="eec5004d55d310a6960f86997c1cbf790e80b6ac" upstream="linaro_android_4.1.2"/>
   <project name="platform/hardware/ti/omap4xxx" path="android/hardware/ti/omap4xxx" revision="7cc40a376a149e24fe4907db31b7d0f0b5e73645" upstream="linaro_android_4.1.2"/>
   <project name="platform/system/core" path="android/system/core" revision="dd28bb9220fc39f6bf793dcf2d5938e928338497" upstream="linaro_android_4.1.2"/>
-  <project path="debian" name="xnox/gcc-arm-linux-androideabi" remote="github" revision="master"/>
 </manifest>
