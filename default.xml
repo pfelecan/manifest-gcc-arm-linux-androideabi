@@ -8,7 +8,7 @@
   <remote fetch="git://git.linaro.org/" name="linaro-other"/>
   <default remote="linaro-android" revision="linaro-master"/>
 
-  <project path="debian" name="xnox/gcc-arm-linux-androideabi" remote="github" revision="master"/>
+  <project path="debian" name="pfelecan/gcc-arm-linux-androideabi" remote="github" revision="bleeding_edge"/>
   <project name="platform/bionic" path="android/bionic" revision="fc675901be6e9b6fd5f8bac1382da6e35ff745f7" upstream="linaro_android_5.1.0"/>
   <project name="platform/build" path="android/build" revision="a9c8e589abbd5f14df1ffac6d6e90f83bd6648fb" upstream="lollipop-mr1-release">
     <copyfile dest="android/Makefile" src="core/root.mk"/>
